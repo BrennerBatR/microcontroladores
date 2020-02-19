@@ -1,0 +1,1 @@
+ exe4.d  exe4.p1:  C:/Users/Brenn/OneDrive/Documents/Unifei/Micro/microcontroladores/exercicio4/exe4.c

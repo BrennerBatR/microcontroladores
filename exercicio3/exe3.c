@@ -12,5 +12,5 @@ int main(){
 	INTCON |= (1<<7)| (1<<6);	// GIE <7> , PEIE <6>
 	PIE1 |= (1<<1);				// TMR2IE <1>
  	PR2 = 195;					// Compara o TMR2 com PR2
- 	while(1){};
+  	while(1){};
  }
