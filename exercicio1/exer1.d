@@ -1,0 +1,1 @@
+ exer1.d  exer1.p1:  C:/Users/Brenn/OneDrive/Documents/Unifei/Micro/microcontroladores/exercicio1/exer1.c
