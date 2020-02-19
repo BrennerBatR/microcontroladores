@@ -1,0 +1,1 @@
+ exe3.d  exe3.p1:  C:/Users/Brenn/OneDrive/Documents/Unifei/Micro/microcontroladores/exercicio3/exe3.c
