@@ -1,0 +1,1 @@
+ exe6.d  exe6.p1:  C:/Users/Brenn/OneDrive/Documents/Unifei/Micro/microcontroladores/exercicio6/exe6.c
