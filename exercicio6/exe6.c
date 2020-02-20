@@ -1,5 +1,5 @@
 #include <xc.h>
-
+#define  _XTAL_FREQ 4000000
 
 int main(){
 	//para usar pwm precisa configurar PR2,T2CON,CCPRxL, CCPxCON
