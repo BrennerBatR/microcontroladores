@@ -1,0 +1,397 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$exercicio7.obj
+cinit CODE 0 7F4 7F4 C 2
+text1 CODE 0 68B 68B 3C 2
+text2 CODE 0 617 617 38 2
+text3 CODE 0 5C2 5C2 23 2
+text4 CODE 0 6C7 6C7 53 2
+text5 CODE 0 5E5 5E5 32 2
+text6 CODE 0 64F 64F 3C 2
+maintext CODE 0 71A 71A DA 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 26 26 2 1
+bssBANK0 BANK0 1 20 20 6 1
+$startup.obj
+end_init CODE 0 0 0 3 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 28-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 28-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-5C1 2
+CONST 800-1FFF 2
+ENTRY 3-5C1 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-5C1 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+CONFIG 2007-2008 2
+EEDATA 2100-21FF 2
+STRCODE 3-5C1 2
+STRCODE 800-1FFF 2
+STRING 3-5C1 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$exercicio7.obj
+7F4 cinit CODE >372:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exercicio7.as
+7F4 cinit CODE >375:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exercicio7.as
+7F4 cinit CODE >398:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exercicio7.as
+7F5 cinit CODE >399:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exercicio7.as
+7F6 cinit CODE >400:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exercicio7.as
+7F7 cinit CODE >401:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exercicio7.as
+7F8 cinit CODE >402:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exercicio7.as
+7F9 cinit CODE >403:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exercicio7.as
+7FA cinit CODE >404:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exercicio7.as
+7FB cinit CODE >405:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exercicio7.as
+7FC cinit CODE >411:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exercicio7.as
+7FC cinit CODE >413:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exercicio7.as
+7FD cinit CODE >414:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exercicio7.as
+64F text6 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+64F text6 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+651 text6 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+655 text6 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+657 text6 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+659 text6 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+660 text6 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+664 text6 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+665 text6 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+66C text6 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+674 text6 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+67A text6 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+67B text6 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+682 text6 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+686 text6 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+5E5 text5 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+5E5 text5 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+5E9 text5 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+5EB text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+5ED text5 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+5F4 text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+5F8 text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+5F9 text5 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+601 text5 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+607 text5 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+60E text5 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+612 text5 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+6C7 text4 CODE >33:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6C8 text4 CODE >38:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6D4 text4 CODE >39:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6D8 text4 CODE >41:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6DD text4 CODE >42:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6E1 text4 CODE >43:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6E2 text4 CODE >44:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6E3 text4 CODE >45:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6EC text4 CODE >46:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6F2 text4 CODE >47:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6FB text4 CODE >49:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6FF text4 CODE >50:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+700 text4 CODE >51:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+701 text4 CODE >52:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+70A text4 CODE >53:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+710 text4 CODE >54:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+5C2 text3 CODE >21:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+5C3 text3 CODE >23:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+5C7 text3 CODE >24:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+5CB text3 CODE >25:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+5CC text3 CODE >26:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+5D5 text3 CODE >27:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+5DB text3 CODE >28:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+617 text2 CODE >3:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+617 text2 CODE >5:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+620 text2 CODE >6:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+623 text2 CODE >7:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+626 text2 CODE >8:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+62C text2 CODE >9:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+632 text2 CODE >10:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+638 text2 CODE >11:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+63E text2 CODE >12:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+644 text2 CODE >13:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+64A text2 CODE >14:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+68B text1 CODE >59:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+68C text1 CODE >61:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+68D text1 CODE >62:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+690 text1 CODE >63:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+694 text1 CODE >64:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+695 text1 CODE >65:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6A4 text1 CODE >66:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6A9 text1 CODE >67:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6AA text1 CODE >68:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6AE text1 CODE >69:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6B2 text1 CODE >70:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6C1 text1 CODE >71:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+6C6 text1 CODE >72:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\lcd.c
+71A maintext CODE >11:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+71A maintext CODE >12:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+71D maintext CODE >13:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+720 maintext CODE >14:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+723 maintext CODE >15:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+727 maintext CODE >17:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+72A maintext CODE >18:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+72B maintext CODE >20:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+736 maintext CODE >21:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+73B maintext CODE >23:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+742 maintext CODE >24:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+748 maintext CODE >25:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+74E maintext CODE >26:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+75A maintext CODE >27:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+760 maintext CODE >29:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+763 maintext CODE >30:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+778 maintext CODE >31:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+798 maintext CODE >32:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+7B8 maintext CODE >33:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+7C2 maintext CODE >34:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+7CB maintext CODE >35:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+7D1 maintext CODE >36:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+7DA maintext CODE >37:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+7E3 maintext CODE >38:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+7E6 maintext CODE >39:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+7E8 maintext CODE >40:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+7F0 maintext CODE >42:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+7F3 maintext CODE >28:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\exe7.c
+$startup.obj
+0 end_init CODE >72:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\startup.as
+0 init CODE >69:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\startup.as
+0 functab ENTRY >39:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\startup.as
+0 functab ENTRY >40:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\startup.as
+0 functab ENTRY >41:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\startup.as
+0 functab ENTRY >42:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\startup.as
+0 functab ENTRY >43:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\startup.as
+0 functab ENTRY >44:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\startup.as
+0 reset_vec CODE >63:C:\Users\Brenn\OneDrive\햞ea de Trabalho\provaMicro\Code\Micro\microcontroladores\exercicio7\startup.as
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - exercicio7.obj
+___lwmod@counter 75 0 COMMON 1 cstackCOMMON exercicio7.obj
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__size_of_lcd_cmd 0 0 ABS 0 - exercicio7.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack startup.obj
+_main E34 0 CODE 0 maintext exercicio7.obj
+btemp 7E 0 ABS 0 - exercicio7.obj
+start 0 0 CODE 0 init startup.obj
+__size_of_main 0 0 ABS 0 - exercicio7.obj
+__size_of___lwdiv 0 0 ABS 0 - exercicio7.obj
+__size_of___lwmod 0 0 ABS 0 - exercicio7.obj
+__Hpowerup 0 0 CODE 0 powerup -
+intlevel0 0 0 ENTRY 0 functab startup.obj
+intlevel1 0 0 ENTRY 0 functab startup.obj
+intlevel2 0 0 ENTRY 0 functab startup.obj
+intlevel3 0 0 ENTRY 0 functab startup.obj
+intlevel4 0 0 ENTRY 0 functab startup.obj
+intlevel5 0 0 ENTRY 0 functab startup.obj
+wtemp0 7E 0 ABS 0 - exercicio7.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+_ADCON0 1F 0 ABS 0 - exercicio7.obj
+_ADCON1 9F 0 ABS 0 - exercicio7.obj
+_ADRESH 1E 0 ABS 0 - exercicio7.obj
+_ADRESL 9E 0 ABS 0 - exercicio7.obj
+_ANSELH 189 0 ABS 0 - exercicio7.obj
+__end_of_lcd_cmd BCA 0 CODE 0 text3 exercicio7.obj
+lcd_data@data 74 0 COMMON 1 cstackCOMMON exercicio7.obj
+__Lmaintext 0 0 ABS 0 maintext -
+___lwmod@divisor 70 0 COMMON 1 cstackCOMMON exercicio7.obj
+__end_of___lwdiv D16 0 CODE 0 text6 exercicio7.obj
+__end_of___lwmod C2E 0 CODE 0 text5 exercicio7.obj
+___lwdiv@quotient 7B 0 COMMON 1 cstackCOMMON exercicio7.obj
+___lwmod@dividend 72 0 COMMON 1 cstackCOMMON exercicio7.obj
+start_initialization FE8 0 CODE 0 cinit exercicio7.obj
+_lcd_set_position D16 0 CODE 0 text1 exercicio7.obj
+__pcstackBANK0 26 0 BANK0 1 cstackBANK0 exercicio7.obj
+lcd_set_position@pos 76 0 COMMON 1 cstackCOMMON exercicio7.obj
+___int_sp 0 0 STACK 2 stack startup.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+___lwdiv@counter 7D 0 COMMON 1 cstackCOMMON exercicio7.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__size_of_lcd_data 0 0 ABS 0 - exercicio7.obj
+__size_of_lcd_init 0 0 ABS 0 - exercicio7.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 0 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FE8 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 800 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_cen 24 0 BANK0 1 bssBANK0 exercicio7.obj
+_dez 23 0 BANK0 1 bssBANK0 exercicio7.obj
+lcd_data@low_nibble 72 0 COMMON 1 cstackCOMMON exercicio7.obj
+__end_of_lcd_set_position D8E 0 CODE 0 text1 exercicio7.obj
+__size_of_lcd_set_position 0 0 ABS 0 - exercicio7.obj
+_lcd_data D8E 0 CODE 0 text4 exercicio7.obj
+_lcd_init C2E 0 CODE 0 text2 exercicio7.obj
+__Lintentry 0 0 CODE 0 intentry -
+_lcd_cmd B84 0 CODE 0 text3 exercicio7.obj
+reset_vec 0 0 CODE 0 reset_vec startup.obj
+__end_of_lcd_data E34 0 CODE 0 text4 exercicio7.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_lcd_init C9E 0 CODE 0 text2 exercicio7.obj
+_milhar 25 0 BANK0 1 bssBANK0 exercicio7.obj
+___lwdiv C9E 0 CODE 0 text6 exercicio7.obj
+___lwmod BCA 0 CODE 0 text5 exercicio7.obj
+__pmaintext E34 0 CODE 0 maintext exercicio7.obj
+lcd_set_position@x 75 0 COMMON 1 cstackCOMMON exercicio7.obj
+lcd_set_position@y 73 0 COMMON 1 cstackCOMMON exercicio7.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 0 config -
+___lwdiv@divisor 76 0 COMMON 1 cstackCOMMON exercicio7.obj
+_tensao 20 0 BANK0 1 bssBANK0 exercicio7.obj
+stackhi 0 0 ABS 0 - startup.obj
+stacklo 0 0 ABS 0 - startup.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+lcd_cmd@cmd 72 0 COMMON 1 cstackCOMMON exercicio7.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit exercicio7.obj
+__Hintentry 0 0 CODE 0 intentry -
+lcd_data@high_nibble 73 0 COMMON 1 cstackCOMMON exercicio7.obj
+__Lstrings 0 0 ABS 0 strings -
+___lwdiv@dividend 78 0 COMMON 1 cstackCOMMON exercicio7.obj
+?___lwdiv 76 0 COMMON 1 cstackCOMMON exercicio7.obj
+?___lwmod 70 0 COMMON 1 cstackCOMMON exercicio7.obj
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 D16 0 CODE 0 text1 exercicio7.obj
+__ptext2 C2E 0 CODE 0 text2 exercicio7.obj
+__ptext3 B84 0 CODE 0 text3 exercicio7.obj
+__ptext4 D8E 0 CODE 0 text4 exercicio7.obj
+__ptext5 BCA 0 CODE 0 text5 exercicio7.obj
+__ptext6 C9E 0 CODE 0 text6 exercicio7.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization FF8 0 CODE 0 cinit exercicio7.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON exercicio7.obj
+__Hend_init 6 0 CODE 0 end_init -
+__end_of_main FE8 0 CODE 0 maintext exercicio7.obj
+_ANSEL 188 0 ABS 0 - exercicio7.obj
+_PORTB 6 0 ABS 0 - exercicio7.obj
+_TRISA 85 0 ABS 0 - exercicio7.obj
+_TRISB 86 0 ABS 0 - exercicio7.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__initialization FE8 0 CODE 0 cinit exercicio7.obj
+__pbssBANK0 20 0 BANK0 1 bssBANK0 exercicio7.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7F4 FE8 C 2
+text1 0 68B D16 3C 2
+text2 0 617 C2E 38 2
+text3 0 5C2 B84 23 2
+text4 0 6C7 D8E 53 2
+text5 0 5E5 BCA 32 2
+text6 0 64F C9E 3C 2
+maintext 0 71A E34 DA 2
+cstackCOMMON 1 70 70 E 1
+reset_vec 0 0 0 3 2
+bssBANK0 1 20 20 8 1

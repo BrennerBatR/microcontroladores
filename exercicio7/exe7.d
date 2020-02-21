@@ -1,0 +1,1 @@
+ exe7.d  exe7.p1:  C:/Users/Brenn/OneDrive/Área\ de\ Trabalho/provaMicro/Code/Micro/microcontroladores/exercicio7/exe7.c C:/Users/Brenn/OneDrive/Área\ de\ Trabalho/provaMicro/Code/Micro/microcontroladores/exercicio7/lcd.h
