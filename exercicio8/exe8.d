@@ -1,0 +1,1 @@
+ exe8.d  exe8.p1:  C:/Users/Brenn/OneDrive/Área\ de\ Trabalho/provaMicro/Code/Micro/microcontroladores/exercicio8/exe8.c
