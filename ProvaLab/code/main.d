@@ -1,0 +1,1 @@
+ main.d  main.p1:  C:/Users/Aluno/Desktop/BrennerBatista/code/main.c C:/Users/Aluno/Desktop/BrennerBatista/code/lcd.h
